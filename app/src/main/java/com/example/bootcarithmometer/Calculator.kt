@@ -47,23 +47,23 @@ class Calculator {
     }
 
 //    fun addOp(input1: Double, input2: Double): Double {
-//
+//          return input1 + input2
 //    }
 //
 //    fun substractOp(input1: Double, input2: Double): Double {
-//
+//          return input1 - input2
 //    }
 //
 //    fun multiplyOp(input1: Double, input2: Double): Double {
-//
+//          return input1 * input2
 //    }
 //
 //    fun divideOp(input1: Double, input2: Double): Double {
-//
+//          return input1 / input2
 //    }
 //
 //    fun remainOp(input1: Double, input2: Double): Double {
-//
+//          return input1 % input2
 //    }
 
 }
