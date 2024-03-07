@@ -33,7 +33,43 @@ class Animal {
 하나의 메소드에서 두가지 기능을 모두 가지고 있어 단일 책임 원칙을 위반한다.
 </br>
 
-아래 코드는 단일 책인 원칙을 지키려고 한 사례
+아래 코드는 단일책임의 원칙을 지키려고 한 사례
+```
+
+class Animal {
+    private var animal = ""
+
+    fun setAnimal(animal: String) {
+            this.animal = animal
+    }
+
+    fun selectAnimal() {
+      when(animal){
+          "Dog" -> Dog().cry()
+          "Cat" -> Cat().cry()
+           else -> print("")
+      }
+    }
+}
+
+class Dog {
+    fun cry() {
+        println("멍멍")
+    }
+}
+
+class Cat{
+    fun cry() {
+        print("야옹")
+    }
+}
+```
+
+
+
+
+</br>
+아래 코드는 의존성 역전원칙을 지키려고 한 사례
 ```
 interface Animal {
     fun cry()
