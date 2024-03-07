@@ -35,7 +35,6 @@ class Animal {
 
 아래 코드는 단일책임의 원칙을 지키려고 한 사례
 ```
-
 class Animal {
     private var animal = ""
 
@@ -64,11 +63,8 @@ class Cat{
     }
 }
 ```
-
-
-
-
 </br>
+
 아래 코드는 의존성 역전원칙을 지키려고 한 사례
 ```
 interface Animal {
